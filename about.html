@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Karel Alwina M. Santos</title>
+    <style>
+        /* Shared Palette Styles */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            background-color: #28666e; color: #333; font-family: 'Segoe UI', sans-serif; 
+            line-height: 1.6; animation: pageFade 1s ease-out;
+        }
+        @keyframes pageFade { from { opacity: 0; transform: scale(0.98); } to { opacity: 1; transform: scale(1); } }
+
+        header { background-color: #033f63; color: #fedc97; padding: 60px 20px; text-align: center; border-bottom: 4px solid #b5b682; }
+        nav { background-color: #7c9885; padding: 15px; text-align: center; position: sticky; top: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        
+        .nav-link { 
+            display: inline-block; background-color: #033f63; color: #fedc97; 
+            padding: 12px 25px; margin: 5px; text-decoration: none; border-radius: 8px; 
+            font-weight: bold; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .nav-link:hover { background-color: #b5b682; color: #033f63; transform: translateY(-4px); box-shadow: 0 6px 15px rgba(0,0,0,0.3); }
+        .active { background-color: #fedc97 !important; color: #033f63 !important; border: 2px solid #033f63; }
+
+        section { max-width: 800px; margin: 30px auto; padding: 30px; background: #fffdf5; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
+        
+        .profile-img { 
+            display: block; margin: 0 auto 20px; border: 6px solid #b5b682; 
+            width: 200px; border-radius: 50%; 
+            transition: transform 0.5s ease;
+        }
+        .profile-img:hover { transform: rotate(5deg) scale(1.05); }
+
+        footer { background: #033f63; color: #fedc97; text-align: center; padding: 25px; margin-top: 40px; }
+        h2 { color: #033f63; border-bottom: 2px solid #7c9885; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About the Developer</h1>
+        <p>Journey of an IT Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About Me</a>
+    </nav>
+
+    <section>
+        <h2>Personal Biography</h2>
+        <img src="karel.jpg" alt="Karel Profile" class="profile-img">
+        <p>I am <strong>Karel Alwina M. Santos</strong>, an Information Technology student at National University. My passion lies in understanding how web systems work under the hood and designing interfaces that make technology accessible to everyone.</p>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:santoskm@students.national-u.edu.ph" style="color:#28666e; font-weight:bold;">santoskm@students.national-u.edu.ph</a></p>
+    </section>
+
+    <footer>© 2026 Santos, Karel Alwina M.</footer>
+</body>
+</html>
