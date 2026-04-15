@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Karel Alwina M. Santos</title>
+    <style>
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+        }
+        
+        body { 
+            background-color: #b2ccd9; /* [Palette 5: Lightest] Main Background */
+            color: #001a3c; /* [Palette 1: Darkest] Primary Text */
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            line-height: 1.8; 
+            animation: pageFade 1s ease-out;
+        }
+
+        @keyframes pageFade {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header { 
+            background-color: #001a3c; /* [Palette 1: Darkest] Header Background */
+            color: #b2ccd9; /* [Palette 5: Lightest] Header Text */
+            padding: 80px 20px; 
+            text-align: center; 
+            border-bottom: 6px solid #00599c; /* [Palette 3] Header Border Accent */
+        }
+
+        nav { 
+            background-color: #6699b2; /* [Palette 4] Nav Bar Background */
+            padding: 20px; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .nav-link { 
+            display: inline-block; 
+            background-color: #001a3c; /* [Palette 1: Darkest] Nav Link Box */
+            color: #b2ccd9; /* [Palette 5: Lightest] Nav Link Text */
+            padding: 12px 30px; 
+            margin: 5px 10px; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover { 
+            background-color: #00599c; /* [Palette 3] Hover State */
+            color: #ffffff;
+            transform: translateY(-4px);
+        }
+
+        /* Active nav link now uses mid-tone blues for clarity */
+        .active { 
+            background-color: #003c73 !important; /* [Palette 2] Active Link Background */
+            color: #ffffff !important; 
+            border: 2px solid #b2ccd9; /* [Palette 5] Active Link Border */
+        }
+
+        section { 
+            max-width: 850px; 
+            margin: 40px auto; 
+            padding: 40px; 
+            background: #ffffff; /* [White] Keeps content clean and readable */
+            border-radius: 12px; 
+            border: 1px solid #b2ccd9; /* [Palette 5] Subtle Section Border */
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        h2 { 
+            color: #001a3c; /* [Palette 1: Darkest] Headings */
+            border-bottom: 2px solid #00599c; /* [Palette 3] Heading Border Accent */
+            margin-bottom: 25px; 
+            padding-bottom: 10px; 
+        }
+        
+        .card { 
+            background: #00599c; /* [Palette 3] Card Background */
+            color: #ffffff; /* White text for contrast */
+            padding: 20px; 
+            border-left: 6px solid #001a3c; /* [Palette 1: Darkest] Card Accent */
+            border-radius: 4px; 
+        }
+
+        footer { 
+            background: #001a3c; /* [Palette 1: Darkest] Footer Background */
+            color: #b2ccd9; /* [Palette 5: Lightest] Footer Text */
+            text-align: center; 
+            padding: 40px; 
+            margin-top: 60px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Karel Alwina M. Santos</h1>
+        <p>BS Information Technology | Web Systems Lab</p>
+    </header>
+
+    <nav>
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Me</a>
+    </nav>
+
+    <section>
+        <h2>Academic Overview</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="card"><strong>University:</strong> National University</div>
+            <div class="card"><strong>Course:</strong> BS Information Technology</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Interests & Hobbies</h2>
+        <ul style="margin-left: 25px;">
+            <li style="margin-bottom: 10px;"><strong>Photography:</strong> Storytelling through digital lenses.</li>
+            <li style="margin-bottom: 10px;"><strong>Music:</strong> Exploring instruments and sound design.</li>
+            <li><strong>Gaming:</strong> Improving strategy via Valorant and other titles.</li>
+        </ul>
+    </section>
+
+    <footer>2026 | ActLab 3 | Created by Santos, Karel Alwina M. | INF 242</footer>
+</body>
+</html>
